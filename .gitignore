@@ -4,3 +4,4 @@ dist/
 .cache/
 .vscode/
 .DS-Store
+package-lock.json

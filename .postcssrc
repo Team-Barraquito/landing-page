@@ -1,0 +1,9 @@
+{
+  "plugins": {
+    "postcss-nesting": true,
+    "autoprefixer": true,
+    "cssnano":  {
+      "preset": "default"
+    }
+  }
+}
