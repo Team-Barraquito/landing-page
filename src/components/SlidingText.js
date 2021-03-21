@@ -7,8 +7,11 @@ class SlidingText extends LitElement {
         font-family: 'Monument Extended';
         color: #FFEC02;
         font-size: 2.8rem;
-      }
+        display: flex;
+        align-items: center;
 
+      }
+      
       @keyframes sliding {
        from {
         transform: translateX(100%);
@@ -16,14 +19,12 @@ class SlidingText extends LitElement {
        to {
          transform: translateX(-120%);
        }
-      }
+      } 
 
       .text-container {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin: auto;
-        animation: sliding 10s infinite linear;
+        text-align: center;
+        animation: sliding 10s infinite cubic-bezier(.075,.18,.60,.83);
+        margin: 0;
       }
 
       .text-container:hover {
@@ -34,9 +35,9 @@ class SlidingText extends LitElement {
 
   render () {
     return html`
-      <div class="text-container">
-          Suscríbete / Suscríbete / Suscríbete /
-      </div>`;
+      <p class="text-container">
+          Suscríbete / Suscríbete / Suscríbete / Suscríbete /
+      </p>`;
   }
 }
 
@@ -45,6 +46,4 @@ customElements.define("sliding-text", SlidingText);
 /*
  *  TODO
  * coger el atributo name o algo y con ello hacer un stylemap
- * tambien cambiar la velocidad de la animacion
- * mirar el ciclo de vida
  */
