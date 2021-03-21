@@ -65,9 +65,13 @@
 
 .movingt {
   width: 100%;
-  background: yellow;
+  background: grey;
   height: 100px;
+  display: flex;
+  text-align: center;
+  justify-content: center; 
 }
+
 
 .filet-sub {
   width: 100%;
