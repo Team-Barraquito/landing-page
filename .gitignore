@@ -3,5 +3,5 @@ build/
 dist/
 .cache/
 .vscode/
-.DS-Store
+.DS_Store
 package-lock.json
