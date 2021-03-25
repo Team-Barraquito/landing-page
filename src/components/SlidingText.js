@@ -6,6 +6,8 @@ class SlidingText extends LitElement {
       text: String,
       color: String,
       slide: String,
+      slash: String,
+      stroke: String,
     };
   }
 
@@ -16,18 +18,21 @@ class SlidingText extends LitElement {
         font-size: 2.75rem;
         width: 100%;
         overflow-x: hidden;
+        color: var(--text-color, #FFEC02);
       }
-    
+
      :host .text-container {
         width: 100%;
         display: flex; 
       }
 
       :host .text-container .moving-text {
-        color: var(--text-color, #FFEC02);
+        padding: 0 5px;
         margin: 0;
         white-space: nowrap;
-        padding: 5px;
+        color: var(--text-color, #FFEC02);
+        text-transform: uppercase;
+        -webkit-text-stroke: var(--text-stroke, unset);
         animation: slide 30s linear infinite var(--slide-direction, normal);
       }
       
@@ -70,14 +75,15 @@ class SlidingText extends LitElement {
         :host {
           --text-color: #${unsafeCSS(this.color)};
           --slide-direction: ${unsafeCSS(this.slide)};
+          --text-stroke: ${unsafeCSS(this.stroke)};
         }
       </style>
       <div class="text-container">
         <p class="moving-text">
-          ${(this.text + " / ").repeat(8)}
+          ${(this.text + " " + this.slash + " ").repeat(8)}
         </p>
         <p class="moving-text">
-          ${(this.text + " / ").repeat(8)}
+          ${(this.text + " " + this.slash + " ").repeat(8)}
         </p>
       </div>`;
   }
