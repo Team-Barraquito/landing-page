@@ -14,36 +14,52 @@ class SlidingText extends LitElement {
       :host {
         font-family: 'Monument Extended';
         font-size: 2.75rem;
-        display: flex;
-        align-items: center;
+        width: 100%;
         overflow-x: hidden;
-        width: 100vw;
+      }
+    
+     :host .text-container {
+        width: 100%;
+        display: flex; 
+      }
+
+      :host .text-container .moving-text {
+        color: var(--text-color, #FFEC02);
+        margin: 0;
+        white-space: nowrap;
+        padding: 5px;
+        animation: slide 30s linear infinite var(--slide-direction, normal);
       }
       
-      @keyframes sliding {
-       from {
-        transform: translateX(100%);
-       }
-       to {
-         transform: translateX(-120%);
-       }
-      } 
+     :host .text-container:hover .moving-text,
+     :host .text-container:hover .moving-text:nth-child(2)
 
-      .text-container {
-        text-align: center;
-        animation:
-        sliding 10s 
-        infinite 
-        cubic-bezier(.070,.19,.60,.83)
-        var(--slide-direction, normal);
-        margin: 0;
-        color: var(--text-color, #FFEC02);
-        white-space: nowrap;
-        padding: 10px;
+      {
+        animation-play-state: paused;
+      }
+      
+      :host .text-container .moving-text:nth-child(2) {
+        animation: 
+          delay-slide 30s linear infinite var(--slide-direction, normal);
+        animation-delay: -15s;
+      }
+      
+      @keyframes slide {
+        0% {
+          transform: translateX(100%);
+        }
+        100% { 
+          transform: translateX(-100%);
+        }
       }
 
-      .text-container:hover {
-        animation-play-state: paused;
+      @keyframes delay-slide {
+        0% {
+          transform: translateX(0);
+        }
+        100% { 
+          transform: translateX(-200%);
+        }
       }
       `;
   }
@@ -56,15 +72,15 @@ class SlidingText extends LitElement {
           --slide-direction: ${unsafeCSS(this.slide)};
         }
       </style>
-      <p class="text-container">
-        ${(this.text + " / ").repeat(7)}
-      </p>`;
+      <div class="text-container">
+        <p class="moving-text">
+          ${(this.text + " / ").repeat(8)}
+        </p>
+        <p class="moving-text">
+          ${(this.text + " / ").repeat(8)}
+        </p>
+      </div>`;
   }
 }
 
 customElements.define("sliding-text", SlidingText);
-/*
- *  TODO
- * coger el atributo name o algo y con ello hacer un stylemap
- * overflow-x al parrafo
- */
