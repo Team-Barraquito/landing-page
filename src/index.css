@@ -8,41 +8,46 @@
 }
 
 .top-container {
-  width: 100%;
-  background-color: red;
+  background-color: black;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(12,1fr);
-  grid-template-areas: 
-  "bigt bigt bigt bigt bigt bigt . . . . logo logo"
+  grid-template-rows: repeat(12, 0.5fr);
+  grid-template-areas:  
+  "bigt bigt bigt bigt bigt bigt logo logo . . . ."
+  "bigt bigt bigt bigt bigt bigt logo logo . . . ."
+  "bigt bigt bigt bigt bigt bigt logo logo . . . ."
   "bigt bigt bigt bigt bigt bigt . . . . . ."
+  "bigt bigt bigt bigt bigt bigt . sidet sidet sidet sidet ."
+  "bigt bigt bigt bigt bigt bigt . sidet sidet sidet sidet ."
+  "bigt bigt bigt bigt bigt bigt . sidet sidet sidet sidet ."
   "bigt bigt bigt bigt bigt bigt . . . . . ."
-  "bigt bigt bigt bigt bigt bigt . . . . . ."
-  "bigt bigt bigt bigt bigt bigt . . . . . ."
-  "bigt bigt bigt bigt bigt bigt . . . . . ."
-  "bigt bigt bigt bigt bigt bigt . . . . . ."
-  "bigt bigt bigt bigt bigt bigt . . . . . ."
-  "bigt bigt bigt bigt bigt bigt . . . . . ."
-  "bigt bigt bigt bigt bigt bigt . . . . . ."
-  "bigt bigt bigt bigt bigt bigt . . . . . ."
+  "bigt bigt bigt bigt bigt bigt . sidetL sidetL sidetL sidetL ."
+  "bigt bigt bigt bigt bigt bigt . sidetL sidetL sidetL sidetL ."
+  "bigt bigt bigt bigt bigt bigt . sidetL sidetL sidetL sidetL ."
   "bigt bigt bigt bigt bigt bigt . . . . . ."
 }
 .top-container  .sidetext {
-    background: lightblue;
     grid-area: bigt;
 }
 
 .top-container .logo {
-    background: pink;
     display: flex;
     align-items: center;
     justify-content: center;
     grid-area: logo;
 }
 
+.top-container .logo img {
+  width: 100%;
+  height: auto;
+}
+
 .top-container .sidetext2 {
-    background: green;
     grid-area: sidet;
+}
+
+.top-container .sidetext3 {
+  grid-area: sidetL;
 }
 
 .middle-container {
