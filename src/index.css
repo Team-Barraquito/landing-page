@@ -6,55 +6,91 @@
        url(../assets/fonts/MonumentExtended-Regular.woff),
        url(../assets/fonts/MonumentExtended-Regular.otf);
 }
+body{
+  margin: 0;
+  width: 100vw;
+}
+/* TODO arreglar el tema de la vista en ordenador porque sale una barra de scroll horizontal*/
 
 .top-container {
-  width: 100%;
-  background-color: red;
+  width: 100vw;
+  background-color: black;
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(2,1fr);
-  grid-template-areas: 
-  "bigt bigt . . logo logo"
-  "bigt bigt . sidet . ."
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, 0.5fr);
+  grid-template-areas:  
+  "bigt bigt bigt bigt bigt bigt logo logo . . . ."
+  "bigt bigt bigt bigt bigt bigt logo logo . . . ."
+  "bigt bigt bigt bigt bigt bigt logo logo . . . ."
+  "bigt bigt bigt bigt bigt bigt . . . . . ."
+  "bigt bigt bigt bigt bigt bigt . sidet sidet sidet sidet ."
+  "bigt bigt bigt bigt bigt bigt . sidet sidet sidet sidet ."
+  "bigt bigt bigt bigt bigt bigt . sidet sidet sidet sidet ."
+  "bigt bigt bigt bigt bigt bigt . . . . . ."
+  "bigt bigt bigt bigt bigt bigt . sidetL sidetL sidetL sidetL ."
+  "bigt bigt bigt bigt bigt bigt . sidetL sidetL sidetL sidetL arrow"
+  "bigt bigt bigt bigt bigt bigt . sidetL sidetL sidetL sidetL arrow"
+  "bigt bigt bigt bigt bigt bigt . . . . . arrow"
 }
 .top-container  .sidetext {
-    background: lightblue;
     grid-area: bigt;
 }
 
 .top-container .logo {
-    background: pink;
     display: flex;
     align-items: center;
     justify-content: center;
     grid-area: logo;
 }
 
+.top-container .logo img {
+  width: 100%;
+  height: auto;
+}
+
 .top-container .sidetext2 {
-    background: green;
     grid-area: sidet;
 }
 
-.middle-container {
+.top-container .sidetext3 {
+  grid-area: sidetL;
+}
+
+.top-container .arrow {
+  grid-area: arrow;
   display: flex;
-  flex-direction: column;
-  width: 100%;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
+  
 }
 
-.div1 {
-  width: 400px;
-  height: 200px;
-  background: black;
-  margin-bottom: 5px;
+.top-container .arrow svg {
+  width: 49.77px;
+  height: 62.58px;
 }
 
-.div2 {
-  width: 400px;
-  height: 200px;
-  background: rebeccapurple;
-  margin-bottom: 5px;
+.middle-container {
+  width: 100vw;
+  height: 600px;
+  background-color: pink;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+  grid-template-areas:  
+  ". . . . filet filet filet filet filet filet . ."
+  ". . center center center center center center center center . ."
+  ". . center center center center center center center center . ."
+  ". . center center center center center center center center . ."
+  ". . center center center center center center center center . ."
+  ". . center center center center center center center center . ."
+}
+
+.middle-container .threadContainer {
+  grid-area: filet;
+}
+
+.middle-container .centerParagraph {
+  grid-area: center;
 }
 
 .bottom-container {
