@@ -64,12 +64,13 @@
 }
 
 .movingt {
-  width: 100%;
+  width: 100vw;
   background: grey;
   height: 100px;
   display: flex;
-  text-align: center;
+  flex-direction: column;
   justify-content: center; 
+  align-items: center;
 }
 
 

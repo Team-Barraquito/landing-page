@@ -1,49 +1,92 @@
-import { LitElement, html, css } from "lit-element";
+import { LitElement, html, css, unsafeCSS } from "lit-element";
 
 class SlidingText extends LitElement {
+  static get properties () {
+    return {
+      text: String,
+      color: String,
+      slide: String,
+      slash: String,
+      stroke: String,
+    };
+  }
+
   static get styles () {
     return css`    
       :host {
         font-family: 'Monument Extended';
-        color: #FFEC02;
-        font-size: 2.8rem;
-        display: flex;
-        align-items: center;
+        font-size: 2.75rem;
+        width: 100%;
+        overflow: hidden;
+        color: var(--text-color, #FFEC02);
+      }
 
+     :host .text-container {
+        width: 100%;
+        display: flex; 
+      }
+
+      :host .text-container .moving-text {
+        padding: 0 5px;
+        margin: 0;
+        white-space: nowrap;
+        color: var(--text-color, #FFEC02);
+        text-transform: uppercase;
+        -webkit-text-stroke: var(--text-stroke, unset);
+        animation: slide 30s linear infinite var(--slide-direction, normal);
       }
       
-      @keyframes sliding {
-       from {
-        transform: translateX(100%);
-       }
-       to {
-         transform: translateX(-120%);
-       }
-      } 
+     :host .text-container:hover .moving-text,
+     :host .text-container:hover .moving-text:nth-child(2)
 
-      .text-container {
-        text-align: center;
-        animation: sliding 10s infinite cubic-bezier(.075,.18,.60,.83);
-        margin: 0;
+      {
+        animation-play-state: paused;
+      }
+      
+      :host .text-container .moving-text:nth-child(2) {
+        animation: 
+          delay-slide 30s linear infinite var(--slide-direction, normal);
+        animation-delay: -15s;
+      }
+      
+      @keyframes slide {
+        0% {
+          transform: translateX(100%);
+        }
+        100% { 
+          transform: translateX(-100%);
+        }
       }
 
-      .text-container:hover {
-        animation-play-state: paused;
+      @keyframes delay-slide {
+        0% {
+          transform: translateX(0);
+        }
+        100% { 
+          transform: translateX(-200%);
+        }
       }
       `;
   }
 
   render () {
     return html`
-      <p class="text-container">
-          Suscríbete / Suscríbete / Suscríbete / Suscríbete /
-      </p>`;
+      <style>
+        :host {
+          --text-color: ${unsafeCSS(this.color)};
+          --slide-direction: ${unsafeCSS(this.slide)};
+          --text-stroke: ${unsafeCSS(this.stroke)};
+        }
+      </style>
+      <div class="text-container">
+        <p class="moving-text">
+          ${(this.text + " " + this.slash + " ").repeat(8)}
+        </p>
+        <p class="moving-text">
+          ${(this.text + " " + this.slash + " ").repeat(8)}
+        </p>
+      </div>`;
   }
 }
 
 customElements.define("sliding-text", SlidingText);
-
-/*
- *  TODO
- * coger el atributo name o algo y con ello hacer un stylemap
- */
