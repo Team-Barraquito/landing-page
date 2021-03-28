@@ -11,11 +11,21 @@
   width: 100%;
   background-color: red;
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(2,1fr);
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12,1fr);
   grid-template-areas: 
-  "bigt bigt . . logo logo"
-  "bigt bigt . sidet . ."
+  "bigt bigt bigt bigt bigt bigt . . . . logo logo"
+  "bigt bigt bigt bigt bigt bigt . . . . . ."
+  "bigt bigt bigt bigt bigt bigt . . . . . ."
+  "bigt bigt bigt bigt bigt bigt . . . . . ."
+  "bigt bigt bigt bigt bigt bigt . . . . . ."
+  "bigt bigt bigt bigt bigt bigt . . . . . ."
+  "bigt bigt bigt bigt bigt bigt . . . . . ."
+  "bigt bigt bigt bigt bigt bigt . . . . . ."
+  "bigt bigt bigt bigt bigt bigt . . . . . ."
+  "bigt bigt bigt bigt bigt bigt . . . . . ."
+  "bigt bigt bigt bigt bigt bigt . . . . . ."
+  "bigt bigt bigt bigt bigt bigt . . . . . ."
 }
 .top-container  .sidetext {
     background: lightblue;
