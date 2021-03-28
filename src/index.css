@@ -15,7 +15,7 @@
   grid-template-rows: repeat(2,1fr);
   grid-template-areas: 
   "bigt bigt . . logo logo"
-  "bigt bigt . sidet . .";
+  "bigt bigt . sidet . ."
 }
 .top-container  .sidetext {
     background: lightblue;
