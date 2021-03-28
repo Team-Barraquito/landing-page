@@ -17,7 +17,7 @@ class SlidingText extends LitElement {
         font-family: 'Monument Extended';
         font-size: 2.75rem;
         width: 100%;
-        overflow-x: hidden;
+        overflow: hidden;
         color: var(--text-color, #FFEC02);
       }
 
@@ -73,7 +73,7 @@ class SlidingText extends LitElement {
     return html`
       <style>
         :host {
-          --text-color: #${unsafeCSS(this.color)};
+          --text-color: ${unsafeCSS(this.color)};
           --slide-direction: ${unsafeCSS(this.slide)};
           --text-stroke: ${unsafeCSS(this.stroke)};
         }
