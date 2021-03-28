@@ -10,20 +10,38 @@
     <script  type="module" src="./components/SlidingText.js"></script>
     <script type="module" src="./components/This-Month.js"></script>
     <script type="module" src="./components/Thread.js"></script>
+    <script type="module" src="./components/SingleParagraphRight.js"></script>
+    <script type="module" src="./components/SingleParagraphLeft.js"></script>
   </head>
   <body>
-    <div >
+    <div>
       <section class="top-container">
+        <!-- Principio SVG-->
         <div class="sidetext">
-           <this-month>
-             
-           </this-month>
+           <this-month></this-month>
         </div>
+        <!-- Final SVG-->
+
+        <!-- Principio Logo-->
         <div class="logo"> 
-          <p> Harhuy </p>
+          <img src="./assets/images/logo-harhuy-mag.png" alt="Harhuy Logo" />
         </div>
-        <div class="sidetext2"></div>
+        <!-- Final Logo-->
+
+        <!-- Principio segundo sidetext-->
+        <div class="sidetext2">
+          <single-paragraph-right alignment="right"> </single-paragraph-right>
+        </div>
+        <!-- Final segundo sidetext-->
+
+        <!-- Principio tercer sidetext-->
+        <div class="sidetext3">
+          <single-paragraph-left alignment="left"> </single-paragraph-left>
+        </div>
+        <!-- Final tercer sidetext-->
+
       </section>
+      <!--TODO Cambiar nombre de la clase "sidetext"-->
     </div>
     
     
