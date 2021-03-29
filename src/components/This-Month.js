@@ -3,10 +3,10 @@ import { LitElement, html, css } from "lit-element";
 class MyElement extends LitElement {
   static get styles () {
     return css`
-        :host {
-          width: 100%;
-          heigth: 100%;
-        }`;
+      :host {
+        width: 100%;
+        heigth: 100%;
+      }`;
   }
 
   render () {
