@@ -57,15 +57,6 @@ class TitleCenter extends LitElement {
       </div>
     </div>
 
-
-
-
-
-
-
-
-
-
     <!--
     <div class="primer_container">
       <div class="title">
@@ -104,4 +95,3 @@ class TitleCenter extends LitElement {
   }
 }
 customElements.define("title-center", TitleCenter);
-
