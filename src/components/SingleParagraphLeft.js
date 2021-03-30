@@ -10,7 +10,7 @@ class SingleParagraphLeft extends LitElement {
   static get styles () {
     return css`
       :host {
-        font-family: "Monument Extended", "Roboto", sans-serif;
+        font-family: "Monument Extended";
         color: white;
         width: 100%;
         height: 100%;
@@ -23,13 +23,13 @@ class SingleParagraphLeft extends LitElement {
       }
 
       .title {
-        font-size: 40px;
+        font-size: 2.5rem;
         margin: 0;
         color: #ffec02;
       }
 
       .text {
-        font-size: 20 px;
+        font-size: 1.25rem;
         white-space: pre-line;
         margin: 0;
       }

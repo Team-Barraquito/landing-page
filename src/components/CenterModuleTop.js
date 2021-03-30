@@ -10,12 +10,12 @@ class CenterModuleTop extends LitElement {
       color: white;
     }
 
-    :host .globalContainer {
+    :host .global-container {
       width: 100%;
       height: 50%;
     }
 
-    :host .globalContainer .firstContent {
+    :host .global-container .first-content {
       width: 100%;
       height: 100%;
       display: flex;
@@ -23,7 +23,7 @@ class CenterModuleTop extends LitElement {
       justify-content: center;
     }
 
-    :host .globalContainer .firstContent .textContainer {
+    :host .global-container .first-content .text-container {
       height: 100%;
       width: 50%;
       display: flex;
@@ -31,22 +31,22 @@ class CenterModuleTop extends LitElement {
       flex-direction: column;
     }
 
-    :host .globalContainer .firstContent .textContainer h3 {
+    :host .global-container .first-content .text-container h3 {
       margin: 0;
       font-size: 5.625rem;
       text-align: right;
-      line-height: 80px;
+      line-height: 5rem;
       transform: translateX(115px);
     }
 
-    :host .globalContainer .firstContent .textContainer p {
+    :host .global-container .first-content .text-container p {
       margin: 0;
       font-size: 1.25rem;
       text-align: right;
-      padding: 80px 10px 0 0;
+      padding: 3.65rem 0.625rem 0 0;
     }
 
-    :host .globalContainer .firstContent .imageContainer {
+    :host .global-container .first-content .image-container {
       height: 100%;
       width: 50%;
       overflow: hidden;
@@ -56,22 +56,21 @@ class CenterModuleTop extends LitElement {
 
   render () {
     return html`
-    <div class="globalContainer">
-      <div class ="firstContent">
-        <div class ="textContainer">
-          <h3> Études de nu </h3>
-          <p> Krull edita en 1930 el portafolio Étude de nu,
-              con 24 fotograbados de desnudos, en cuyo texto
-              de presentación va a intentar explicar qué significa
-              para ella la fotografía y quién es el verdadero fotógrafo.
-          </p>
+      <div class="global-container">
+        <div class ="first-content">
+          <div class ="text-container">
+            <h3> Études de nu </h3>
+            <p> Krull edita en 1930 el portafolio Étude de nu,
+                con 24 fotograbados de desnudos, en cuyo texto
+                de presentación va a intentar explicar qué significa
+                para ella la fotografía y quién es el verdadero fotógrafo.
+            </p>
+          </div>
+          <div class="image-container">
+            <img src ="../assets/images/Etude.jpg" alt="Exposición Ètude"/>
+          </div>
         </div>
-        <div class="imageContainer">
-         <img src ="../assets/images/Imagen2.jpg" alt="imagen de artista" />
-        </div>
-      </div>
-    </div>
-    </div>`;
+      </div>`;
   }
 }
 customElements.define("center-module-top", CenterModuleTop);

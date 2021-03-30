@@ -44,7 +44,8 @@ class SlidingText extends LitElement {
       }
 
       :host .text-container .moving-text:nth-child(2) {
-        animation: delay-slide 30s linear infinite var(--slide-direction, normal);
+        animation:
+        delay-slide 30s linear infinite var(--slide-direction, normal);
         animation-delay: -15s;
       }
 
@@ -79,6 +80,7 @@ class SlidingText extends LitElement {
           --text-stroke: ${unsafeCSS(this.stroke)};
         }
       </style>
+      
       <div class="text-container">
         <p class="moving-text">
           ${(this.text + " " + this.slash + " ").repeat(8)}
@@ -86,9 +88,7 @@ class SlidingText extends LitElement {
         <p class="moving-text">
           ${(this.text + " " + this.slash + " ").repeat(8)}
         </p>
-      </div>
-
-      `;
+      </div>`;
   }
 }
 
