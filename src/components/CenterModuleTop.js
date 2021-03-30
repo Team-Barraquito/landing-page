@@ -1,6 +1,6 @@
 import { LitElement, html, css } from "lit-element";
 
-class CenterTitleTop extends LitElement {
+class CenterModuleTop extends LitElement {
   static get styles () {
     return css`
     :host {
@@ -74,4 +74,4 @@ class CenterTitleTop extends LitElement {
     </div>`;
   }
 }
-customElements.define("center-title-top", CenterTitleTop);
+customElements.define("center-module-top", CenterModuleTop);

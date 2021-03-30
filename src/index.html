@@ -12,8 +12,8 @@
     <script type="module" src="./components/Thread.js"></script>
     <script type="module" src="./components/SingleParagraphRight.js"></script>
     <script type="module" src="./components/SingleParagraphLeft.js"></script>
-    <script type="module" src="./components/CenterTitleTop.js"></script>
-    <script type="module" src="./components/CenterTitleBottom.js"></script>
+    <script type="module" src="./components/CenterModuleTop.js"></script>
+    <script type="module" src="./components/CenterModuleBottom.js"></script>
     <script type="module" src="./components/BottomSuscribe.js"></script>
   </head>
   <body>
@@ -41,35 +41,34 @@
         <div class="left-paragraph">
           <single-paragraph-left alignment="left"> </single-paragraph-left>
         </div>
-        <div class="arrow1">
+        <div class="arrow">
           <svg fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m21.858 57.218.723.691.691-.723-.722-.69-.692.722zm-.022.023-.722-.692-.692.723.723.691.691-.722zM3.154 39.319l-.722-.691-.692.722.723.692.691-.723zm4.84-5.057.691-.723-.722-.691-.692.722.723.692zm15.115 14.464-.691.723 1.744 1.669-.053-2.414-1 .022zM22.082 2.089l-.022-1-1 .023.023 1 1-.023zm6.999-.154 1-.022-.023-1-1 .023.023 1zm1.027 46.661-1 .022.053 2.414 1.67-1.744-.723-.692zm14.93-15.602.692-.723-.723-.69-.691.722.722.69zm5.058 4.84.722.69.692-.722-.723-.691-.691.723zM26.894 62.08l-.692.723.723.691.691-.722-.722-.692zm-5.758-5.554-.022.023 1.445 1.383.022-.023-1.445-1.383zM2.463 40.042 21.167 57.94l1.383-1.445L3.845 38.597l-1.382 1.445zM7.27 33.57l-4.84 5.058 1.446 1.383 4.84-5.058L7.27 33.57zm16.53 14.434L8.684 33.538l-1.383 1.445L22.418 49.45l1.383-1.445zM21.082 2.11l1.026 46.637 2-.044-1.027-46.637-2 .044zM29.058.936l-6.999.154.044 2 6.999-.155-.044-2zm2.049 47.638L30.08 1.914l-2 .043 1.028 46.661 2-.044zm13.208-16.271-14.93 15.602 1.445 1.383 14.93-15.603-1.445-1.382zm6.471 4.808-5.057-4.84-1.383 1.445 5.057 4.84 1.383-1.445zm-23.17 25.66 23.201-24.246-1.445-1.383L26.171 61.39l1.445 1.383zm-6.472-4.808 5.057 4.84 1.383-1.445-5.057-4.84-1.383 1.445z" fill="#FFEC02"/></svg>
         </div>
-
       </section>
-      <!--TODO Cambiar nombre de la clase "sidetext"-->
     </div>
     <!-- Final tercer sidetext-->
 
     <!-- Principio de middle container-->
     <div class="middle-container">
-        <div class="threadContainer">
-          <yellow-thread> </yellow-thread>
+        <div class="fillet-container">
+          <yellow-fillet></yellow-fillet>
         </div>
-        <div class="centerParagraph">
-          <div class="center-title-top">
-            <center-title-top></center-title-top>
+        <div class="center-paragraph">
+          <div class="center-module-top">
+            <center-module-top></center-module-top>
           </div>
-          <div class="center-title-bottom">
-            <center-title-bottom></center-title-bottom>
+          <div class="center-module-bottom">
+            <center-module-bottom></center-module-bottom>
           </div>
         </div>
-      <div class="arrow2">
+      <div class="arrow">
         <svg fill="none" xmlns="http://www.w3.org/2000/svg">
           <path
             d="m21.858 57.218.723.691.691-.723-.722-.69-.692.722zm-.022.023-.722-.692-.692.723.723.691.691-.722zM3.154 39.319l-.722-.691-.692.722.723.692.691-.723zm4.84-5.057.691-.723-.722-.691-.692.722.723.692zm15.115 14.464-.691.723 1.744 1.669-.053-2.414-1 .022zM22.082 2.089l-.022-1-1 .023.023 1 1-.023zm6.999-.154 1-.022-.023-1-1 .023.023 1zm1.027 46.661-1 .022.053 2.414 1.67-1.744-.723-.692zm14.93-15.602.692-.723-.723-.69-.691.722.722.69zm5.058 4.84.722.69.692-.722-.723-.691-.691.723zM26.894 62.08l-.692.723.723.691.691-.722-.722-.692zm-5.758-5.554-.022.023 1.445 1.383.022-.023-1.445-1.383zM2.463 40.042 21.167 57.94l1.383-1.445L3.845 38.597l-1.382 1.445zM7.27 33.57l-4.84 5.058 1.446 1.383 4.84-5.058L7.27 33.57zm16.53 14.434L8.684 33.538l-1.383 1.445L22.418 49.45l1.383-1.445zM21.082 2.11l1.026 46.637 2-.044-1.027-46.637-2 .044zM29.058.936l-6.999.154.044 2 6.999-.155-.044-2zm2.049 47.638L30.08 1.914l-2 .043 1.028 46.661 2-.044zm13.208-16.271-14.93 15.602 1.445 1.383 14.93-15.603-1.445-1.382zm6.471 4.808-5.057-4.84-1.383 1.445 5.057 4.84 1.383-1.445zm-23.17 25.66 23.201-24.246-1.445-1.383L26.171 61.39l1.445 1.383zm-6.472-4.808 5.057 4.84 1.383-1.445-5.057-4.84-1.383 1.445z"
             fill="#FFEC02" />
         </svg>
       </div>
+      <div class="separator"></div>
     </div>
     <!-- Final de middle container-->
 
@@ -83,13 +82,9 @@
             <sliding-text color="#FFEC02" slash="/" slide="normal" text="Suscríbete"></sliding-text>
             <sliding-text color="transparent"  slash="\" slide="reverse" text="Nueva ed. cada mes" stroke="3px #FFF"></sliding-text>
           </div>
-<<<<<<< HEAD
-          <div class="filet-sub"></div> 
-=======
           <div class="fillet-bottom">
             <bottom-suscribe></bottom-suscribe>
           </div>
->>>>>>> eebd3cf7ad485d6bcfd3a15e3210d39df772a9e1
       </footer>
     </div>
   </body>
