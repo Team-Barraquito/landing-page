@@ -19,8 +19,8 @@ class Thread extends LitElement {
         font-family: 'Monument Extended';
         text-decoration: none;
         color: yellow;
-      }
-`;
+      }`;
+
   }
 
   render () {
@@ -28,8 +28,7 @@ class Thread extends LitElement {
         <div class = "container">
             <div class = "thread"> </div>
             <a href="#"> Suscríbete </a>
-        </div>
-        `;
+        </div>`;
   }
 }
 customElements.define("yellow-thread", Thread);
