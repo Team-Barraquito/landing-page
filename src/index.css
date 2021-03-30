@@ -12,9 +12,8 @@ body {
   margin: 0;
   width: 100vw;
   background-color: black;
+  overflow-x: hidden;
 }
-
-/* TODO arreglar el tema de la vista en ordenador porque sale una barra de scroll horizontal */
 
 .top-container section {
   width: 100vw;
@@ -130,9 +129,9 @@ body {
   flex-direction: column;
 }
 
-.movingt {
+.sliding-text {
   width: 100vw;
-  height: 100px;
+  height: 6.875rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
