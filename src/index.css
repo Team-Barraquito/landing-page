@@ -16,7 +16,7 @@ body {
 
 /* TODO arreglar el tema de la vista en ordenador porque sale una barra de scroll horizontal */
 
-.top-container {
+.top-container section {
   width: 100vw;
   background-color: black;
   display: grid;
@@ -37,38 +37,38 @@ body {
     "month month month month month month . . . . . arrow";
 }
 
-.top-container .left-content {
+.top-container  section .left-content {
   grid-area: month;
 }
 
-.top-container .logo {
+.top-container section .logo {
   display: flex;
   align-items: center;
   justify-content: center;
   grid-area: logo;
 }
 
-.top-container .logo img {
+.top-container  section .logo img {
   width: 100%;
   height: auto;
 }
 
-.top-container .right-paragraph {
+.top-container section .right-paragraph {
   grid-area: rp;
 }
 
-.top-container .left-paragraph {
+.top-container section .left-paragraph {
   grid-area: lp;
 }
 
-.top-container .arrow {
+.top-container section .arrow {
   grid-area: arrow;
   display: flex;
   justify-content: center;
   align-items: flex-end;
 }
 
-.top-container .arrow svg {
+.top-container section .arrow svg {
   width: 3.1106rem;
   height: 3.9113rem;
 }
