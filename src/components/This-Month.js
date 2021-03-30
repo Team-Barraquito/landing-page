@@ -5,11 +5,6 @@ class MyElement extends LitElement {
     return css`
       :host {
         width: 100%;
-        heigth: 100%;
-      }
-
-      :host svg {
-        width: 100%;
         height: 100%;
       }
     }`;
