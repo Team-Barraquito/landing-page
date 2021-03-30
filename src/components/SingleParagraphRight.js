@@ -23,26 +23,27 @@ class SingleParagraphRight extends LitElement {
       }
 
       .title {
-        font-size: 40px;
+        font-size: 2.5rem;
         margin: 0;
         color: #FFEC02;
       }
 
       .text {
-        font-size: 20 px;
-        padding: 10px 0 0 0;
+        font-size: 1.25rem;
+        padding: 0.625rem 0 0 0;
         margin: 0;
       }
 `;
   }
 
+  // TODO cambiar texto aqui
   render () {
     return html`
-    <style>
-      :host {
-      --text-alignment: ${unsafeCSS(this.alignment)}
-      }
-    </style>
+      <style>
+        :host {
+          --text-alignment: ${unsafeCSS(this.alignment)}
+        }
+      </style>
 
       <div class="single-paragraph">
         <h2 class="title">Festival Boreal</h2>

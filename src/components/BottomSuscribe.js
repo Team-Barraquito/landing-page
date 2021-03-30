@@ -25,29 +25,21 @@ class BottomSuscribe extends LitElement {
       }
 
       .container .fillet {
-        width: 915px;
-        height: 50px;
+        width: 57.1875rem;
+        height: 3.125rem;
         background-color: #fff;
         position: absolute;
         z-index: 1;
-      }
-
-      .container .arrow {
-
-      }
-`;
+      }`;
   }
 
   render () {
     return html`
-        <div class = "container">
-            <p class="suscribe">
-              Suscríbete
-            </p>
-            <div class="fillet"></div>
-            <div class="arrow"></div>
-        </div>
-        `;
+      <div class = "container">
+        <p class="suscribe">Suscríbete</p>
+        <div class="fillet"></div>
+        <div class="arrow"></div>
+      </div>`;
   }
 }
 customElements.define("bottom-suscribe", BottomSuscribe);
