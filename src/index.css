@@ -23,22 +23,22 @@ body {
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(12, 0.5fr);
   grid-template-areas:
-    "bigt bigt bigt bigt bigt bigt logo logo . . . ."
-    "bigt bigt bigt bigt bigt bigt logo logo . . . ."
-    "bigt bigt bigt bigt bigt bigt logo logo . . . ."
-    "bigt bigt bigt bigt bigt bigt . . . . . ."
-    "bigt bigt bigt bigt bigt bigt . sidet sidet sidet sidet ."
-    "bigt bigt bigt bigt bigt bigt . sidet sidet sidet sidet ."
-    "bigt bigt bigt bigt bigt bigt . sidet sidet sidet sidet ."
-    "bigt bigt bigt bigt bigt bigt . . . . . ."
-    "bigt bigt bigt bigt bigt bigt . sidetL sidetL sidetL sidetL ."
-    "bigt bigt bigt bigt bigt bigt . sidetL sidetL sidetL sidetL arrow1"
-    "bigt bigt bigt bigt bigt bigt . sidetL sidetL sidetL sidetL arrow1"
-    "bigt bigt bigt bigt bigt bigt . . . . . arrow1";
+    "month month month month month month logo logo . . . ."
+    "month month month month month month logo logo . . . ."
+    "month month month month month month logo logo . . . ."
+    "month month month month month month . . . . . ."
+    "month month month month month month . rp rp rp rp ."
+    "month month month month month month . rp rp rp rp ."
+    "month month month month month month . rp rp rp rp ."
+    "month month month month month month . . . . . ."
+    "month month month month month month . lp lp lp lp ."
+    "month month month month month month . lp lp lp lp arrow1"
+    "month month month month month month . lp lp lp lp arrow1"
+    "month month month month month month . . . . . arrow1";
 }
 
-.top-container .sidetext {
-  grid-area: bigt;
+.top-container .left-content {
+  grid-area: month;
 }
 
 .top-container .logo {
@@ -53,12 +53,12 @@ body {
   height: auto;
 }
 
-.top-container .sidetext2 {
-  grid-area: sidet;
+.top-container .right-paragraph {
+  grid-area: rp;
 }
 
-.top-container .sidetext3 {
-  grid-area: sidetL;
+.top-container .left-paragraph {
+  grid-area: lp;
 }
 
 .top-container .arrow1 {
