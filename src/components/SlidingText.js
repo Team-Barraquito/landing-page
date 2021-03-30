@@ -67,8 +67,7 @@ class SlidingText extends LitElement {
         100% {
           transform: translateX(-200%);
         }
-      }
-`;
+      }`;
   }
 
   render () {
@@ -83,10 +82,10 @@ class SlidingText extends LitElement {
       
       <div class="text-container">
         <p class="moving-text">
-          ${(this.text + " " + this.slash + " ").repeat(8)}
+          ${(this.text + " " + this.slash + " ").repeat(12)}
         </p>
         <p class="moving-text">
-          ${(this.text + " " + this.slash + " ").repeat(8)}
+          ${(this.text + " " + this.slash + " ").repeat(12)}
         </p>
       </div>`;
   }
