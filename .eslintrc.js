@@ -30,7 +30,7 @@ module.exports = {
     yoda: ["error", "never"],
     "max-len": ["error"],
     "max-lines": ["error"],
-    "max-lines-per-function": ["error", 60],
+    "max-lines-per-function": ["error", 70],
     "max-nested-callbacks": ["error", 5],
     "max-params": ["error", 6],
     "max-depth": ["error", 5],
