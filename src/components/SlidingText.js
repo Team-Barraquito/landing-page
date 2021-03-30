@@ -39,6 +39,7 @@ class SlidingText extends LitElement {
 
       :host .text-container:hover .moving-text,
       :host .text-container:hover .moving-text:nth-child(2) {
+
         animation-play-state: paused;
       }
 
