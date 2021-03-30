@@ -1,6 +1,6 @@
 import { LitElement, html, css } from "lit-element";
 
-class Thread extends LitElement {
+class YellowFillet extends LitElement {
   static get styles () {
     return css`
       .container {
@@ -32,4 +32,4 @@ class Thread extends LitElement {
         `;
   }
 }
-customElements.define("yellow-thread", Thread);
+customElements.define("yellow-fillet", YellowFillet);

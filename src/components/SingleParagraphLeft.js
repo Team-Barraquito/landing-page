@@ -25,7 +25,7 @@ class SingleParagraphLeft extends LitElement {
       .title {
         font-size: 40px;
         margin: 0;
-        color: #FFEC02;
+        color: #ffec02;
       }
 
       .text {

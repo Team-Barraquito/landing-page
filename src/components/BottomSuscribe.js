@@ -28,9 +28,12 @@ class BottomSuscribe extends LitElement {
         width: 915px;
         height: 50px;
         background-color: #fff;
-        transform: translateY(0);
         position: absolute;
         z-index: 1;
+      }
+
+      .container .arrow {
+
       }
 `;
   }
@@ -42,6 +45,7 @@ class BottomSuscribe extends LitElement {
               Suscríbete
             </p>
             <div class="fillet"></div>
+            <div class="arrow"></div>
         </div>
         `;
   }

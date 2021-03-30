@@ -32,9 +32,9 @@ body {
     "month month month month month month . rp rp rp rp ."
     "month month month month month month . . . . . ."
     "month month month month month month . lp lp lp lp ."
-    "month month month month month month . lp lp lp lp arrow1"
-    "month month month month month month . lp lp lp lp arrow1"
-    "month month month month month month . . . . . arrow1";
+    "month month month month month month . lp lp lp lp arrow"
+    "month month month month month month . lp lp lp lp arrow"
+    "month month month month month month . . . . . arrow";
 }
 
 .top-container .left-content {
@@ -61,16 +61,16 @@ body {
   grid-area: lp;
 }
 
-.top-container .arrow1 {
-  grid-area: arrow1;
+.top-container .arrow {
+  grid-area: arrow;
   display: flex;
   justify-content: center;
   align-items: flex-end;
 }
 
-.top-container .arrow1 svg {
-  width: 49.77px;
-  height: 62.58px;
+.top-container .arrow svg {
+  width: 3.1106rem;
+  height: 3.9113rem;
 }
 
 .middle-container {
@@ -81,7 +81,7 @@ body {
   grid-template-rows: repeat(22, 1fr);
   grid-template-areas:
     ". . . . . . . . . . . . . . . ."
-    ". . . . filet filet filet filet filet filet filet filet . . . ."
+    ". . . . fillet fillet fillet fillet fillet fillet fillet fillet . . . ."
     ". . . . . . . . . . . . . . . ."
     ". . module module module module module module module module module module module module . ."
     ". . module module module module module module module module module module module module . ."
@@ -98,30 +98,30 @@ body {
     ". . module module module module module module module module module module module module . ."
     ". . module module module module module module module module module module module module . ."
     ". . module module module module module module module module module module module module . ."
-    ". . module module module module module module module module module module module module arrow2 arrow2"
-    ". . module module module module module module module module module module module module arrow2 arrow2"
-    ". . module module module module module module module module module module module module arrow2 arrow2"
+    ". . module module module module module module module module module module module module arrow arrow"
+    ". . module module module module module module module module module module module module arrow arrow"
+    ". . module module module module module module module module module module module module arrow arrow"
     ". . . . . . . . . . . . . . . .";
 }
 
-.middle-container .threadContainer {
-  grid-area: filet;
+.middle-container .fillet-container {
+  grid-area: fillet;
 }
 
-.middle-container .centerParagraph {
+.middle-container .center-paragraph {
   grid-area: module;
 }
 
-.middle-container .arrow2 {
-  grid-area: arrow2;
+.middle-container .arrow {
+  grid-area: arrow;
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
 }
 
-.middle-container .arrow2 svg {
-  width: 49.77px;
-  height: 62.58px;
+.middle-container .arrow svg {
+  width: 3.1106rem;
+  height: 3.9113rem;
 }
 
 .bottom-container {
