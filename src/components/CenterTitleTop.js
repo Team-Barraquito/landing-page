@@ -1,58 +1,65 @@
 import { LitElement, html, css } from "lit-element";
 
-class TitleCenter extends LitElement {
+class CenterTitleTop extends LitElement {
   static get styles () {
     return css`
-    :host{
+    :host {
       width: 100%;
-      heigth: 100%;
+      height: 100%;
       font-family: "Monument Extended";
       color: white;
     }
-    :host .globalContainer { 
+
+    :host .globalContainer {
       width: 100%;
-      height: 100%; 
-      background-color: green;
+      height: 50%;
     }
+
     :host .globalContainer .firstContent {
       width: 100%;
       height: 100%;
-      background-color: red;
       display: flex;
+      align-items: center;
+      justify-content: center;
     }
 
     :host .globalContainer .firstContent .textContainer {
       height: 100%;
       width: 50%;
-      background: purple;
+      display: flex;
+      justify-content: flex-end;
+      flex-direction: column;
     }
 
     :host .globalContainer .firstContent .textContainer h3 {
       margin: 0;
       font-size: 5.625rem;
-      display: inline;
+      text-align: right;
+      line-height: 80px;
+      transform: translateX(115px);
     }
 
     :host .globalContainer .firstContent .textContainer p {
       margin: 0;
       font-size: 1.25rem;
+      text-align: right;
+      padding: 80px 10px 0 0;
     }
 
     :host .globalContainer .firstContent .imageContainer {
       height: 100%;
       width: 50%;
-      background: lightblue;
+      overflow: hidden;
     }
-
-    `;
+`;
   }
 
   render () {
     return html`
     <div class="globalContainer">
-      <div class ="firstContent"> 
+      <div class ="firstContent">
         <div class ="textContainer">
-          <h3> Krull </h3>
+          <h3> Études de nu </h3>
           <p> Krull edita en 1930 el portafolio Étude de nu,
               con 24 fotograbados de desnudos, en cuyo texto
               de presentación va a intentar explicar qué significa
@@ -63,22 +70,8 @@ class TitleCenter extends LitElement {
          <img src ="../assets/images/Imagen2.jpg" alt="imagen de artista" />
         </div>
       </div>
-
-      <div class ="secondtContent"> 
-      <div class ="textContainer">
-        <h3> Basil Kincaid </h3>
-        <p> Krull edita en 1930 el portafolio Étude de nu,
-            con 24 fotograbados de desnudos, en cuyo texto
-            de presentación va a intentar explicar qué significa
-            para ella la fotografía y quién es el verdadero fotógrafo.
-        </p>
-      </div>
-      <div class="imageContainer">
-       <img src ="../assets/images/Imagen1.jpg" alt="imagen de artista" />
-      </div>
     </div>
-
     </div>`;
   }
 }
-customElements.define("title-center", TitleCenter);
+customElements.define("center-title-top", CenterTitleTop);
