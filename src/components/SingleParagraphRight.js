@@ -25,13 +25,27 @@ class SingleParagraphRight extends LitElement {
       .title {
         font-size: 2.5rem;
         margin: 0;
-        color: #FFEC02;
+        color: #ffec02;
       }
 
       .text {
         font-size: 1.25rem;
-        padding: 0.625rem 0 0 0;
+        padding: 0.625rem 0 0.625rem 0;
         margin: 0;
+      }
+
+      @media screen and (max-width: 768px) {
+        .title {
+          font-size: 1.5rem;
+          margin: 0;
+          color: #ffec02;
+        }
+
+        .text {
+          font-size: 0.8rem;
+          padding: 0.625rem 0 0.625rem 0;
+          margin: 0;
+        }
       }
 `;
   }
@@ -48,9 +62,9 @@ class SingleParagraphRight extends LitElement {
       <div class="single-paragraph">
         <h2 class="title">Festival Boreal</h2>
         <p class="text">
-          Del 19 al 22 de Septiembre de 2019,
-          el casco histórico del municipio tinerfeño
-          de los Silos albergó el Festival Internacional Boreal. 
+          Del 19 al 22 de Septiembre de 2019 |
+          el casco histórico tinerfeño
+          de los Silos albergó el Festival Internacional Boreal.
         </p>
       </div>`;
   }

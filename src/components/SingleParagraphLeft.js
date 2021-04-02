@@ -30,8 +30,22 @@ class SingleParagraphLeft extends LitElement {
 
       .text {
         font-size: 1.25rem;
-        white-space: pre-line;
+        padding: 0.625rem 0 0.625rem 0;
         margin: 0;
+      }
+
+      @media screen and (max-width: 768px) {
+        .title {
+          font-size: 1.5rem;
+          margin: 0;
+          color: #ffec02;
+        }
+
+        .text {
+          font-size: 0.8rem;
+          padding: 0.625rem 0 0.625rem 0;
+          margin: 0;
+        }
       }
 `;
   }

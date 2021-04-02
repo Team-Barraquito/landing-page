@@ -13,14 +13,19 @@ body {
   width: 100vw;
   background-color: black;
   overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .top-container section {
   width: 100vw;
+  height: auto;
   background-color: black;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(12, 0.5fr);
+  grid-template-rows: repeat(12, 1fr);
   grid-template-areas:
     "month month month month month month logo logo . . . ."
     "month month month month month month logo logo . . . ."
@@ -36,7 +41,7 @@ body {
     "month month month month month month . . . . . arrow";
 }
 
-.top-container  section .left-content {
+.top-container section .left-content {
   grid-area: month;
 }
 
@@ -47,7 +52,7 @@ body {
   grid-area: logo;
 }
 
-.top-container  section .logo img {
+.top-container section .logo img {
   width: 100%;
   height: auto;
 }
@@ -76,35 +81,29 @@ body {
   width: 100vw;
   height: auto;
   display: grid;
-  grid-template-columns: repeat(16, 1fr);
-  grid-template-rows: repeat(22, 1fr);
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(13, 1fr);
   grid-template-areas:
-    ". . . . . . . . . . . . . . . ."
-    ". . . . fillet fillet fillet fillet fillet fillet fillet fillet . . . ."
-    ". . . . . . . . . . . . . . . ."
-    ". . module module module module module module module module module module module module . ."
-    ". . module module module module module module module module module module module module . ."
-    ". . module module module module module module module module module module module module . ."
-    ". . module module module module module module module module module module module module . ."
-    ". . module module module module module module module module module module module module . ."
-    ". . module module module module module module module module module module module module . ."
-    ". . module module module module module module module module module module module module . ."
-    ". . module module module module module module module module module module module module . ."
-    ". . module module module module module module module module module module module module . ."
-    ". . module module module module module module module module module module module module . ."
-    ". . module module module module module module module module module module module module . ."
-    ". . module module module module module module module module module module module module . ."
-    ". . module module module module module module module module module module module module . ."
-    ". . module module module module module module module module module module module module . ."
-    ". . module module module module module module module module module module module module . ."
-    ". . module module module module module module module module module module module module arrow arrow"
-    ". . module module module module module module module module module module module module arrow arrow"
-    ". . module module module module module module module module module module module module arrow arrow"
-    ". . . . . . . . . . . . . . . .";
+    ". . . . . . . ."
+    ". . fillet fillet fillet fillet . ."
+    ". . . . . . . ."
+    ". module module module module module module ."
+    ". module module module module module module ."
+    ". module module module module module module ."
+    ". module module module module module module ."
+    ". module module module module module module ."
+    ". module module module module module module ."
+    ". module module module module module module ."
+    ". module module module module module module ."
+    ". module module module module module module arrow"
+    ". . . . . . . arrow";
 }
 
 .middle-container .fillet-container {
   grid-area: fillet;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .middle-container .center-paragraph {
@@ -114,13 +113,14 @@ body {
 .middle-container .arrow {
   grid-area: arrow;
   display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
+  justify-content: center;
+  align-items: center;
 }
 
 .middle-container .arrow svg {
   width: 3.1106rem;
   height: 3.9113rem;
+  transform: translateX(30px);
 }
 
 .bottom-container {
@@ -145,4 +145,237 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+  .top-container section {
+    margin: auto;
+    width: 100%;
+    height: auto;
+    background-color: black;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    grid-template-areas:
+      "month month month month month month month .  logo logo "
+      "month month month month month month month .  logo logo "
+      "month month month month month month month .  logo logo "
+      "month month month month month month month .  logo logo "
+      "month month month month month month month .  logo logo "
+      ". rp rp rp rp rp rp rp rp ."
+      ". rp rp rp rp rp rp rp rp ."
+      ". lp lp lp lp lp lp lp lp ."
+      ". lp lp lp lp lp lp lp lp arrow"
+      ". . . . . . . . . arrow";
+  }
+
+  .top-container section .left-content {
+    grid-area: month;
+    width: auto;
+    height: auto;
+  }
+
+  .top-container section .logo {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    grid-area: logo;
+    overflow: hidden;
+  }
+
+  .top-container section .logo img {
+    width: 100%;
+    height: auto;
+  }
+
+  .top-container section .right-paragraph {
+    grid-area: rp;
+    width: auto;
+  }
+
+  .top-container section .left-paragraph {
+    grid-area: lp;
+  }
+
+  .top-container section .arrow {
+    grid-area: arrow;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+
+  .top-container section .arrow svg {
+    width: 3.1106rem;
+    height: 3.9113rem;
+  }
+
+  .middle-container {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    grid-template-areas:
+      ". fillet fillet ."
+      "module module module module"
+      "module module module module"
+      "module module module module"
+      "module module module module"
+      "module module module module"
+      "module module module module"
+      ". . . arrow";
+  }
+
+  .middle-container .fillet-container {
+    grid-area: fillet;
+    display: flex;
+    align-items: center;
+  }
+
+  .middle-container .center-paragraph {
+    grid-area: module;
+  }
+
+  .middle-container .arrow {
+    grid-area: arrow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .middle-container .arrow svg {
+    width: 3.1106rem;
+    height: 3.9113rem;
+    transform: translateX(30px);
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .top-container section {
+    margin: auto;
+    width: 100%;
+    height: auto;
+    background-color: black;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+    grid-template-areas:
+      ". . . logo "
+      "month month month month"
+      "month month month month"
+      "month month month month"
+      "rp rp rp rp"
+      "rp rp rp rp"
+      "lp lp lp lp"
+      "lp lp lp lp"
+      ". . . arrow";
+  }
+
+  .top-container section .left-content {
+    grid-area: month;
+    width: auto;
+    height: auto;
+  }
+
+  .top-container section .logo {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    grid-area: logo;
+    overflow: hidden;
+    padding-bottom: 10%;
+  }
+
+  .top-container section .logo img {
+    width: 100%;
+    height: auto;
+  }
+
+  .top-container section .right-paragraph {
+    grid-area: rp;
+    width: auto;
+    padding: 5%;
+  }
+
+  .top-container section .left-paragraph {
+    grid-area: lp;
+    padding: 5%;
+  }
+
+  .top-container section .arrow {
+    width: 100%;
+    height: 100%;
+    grid-area: arrow;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+
+  .top-container section .arrow svg {
+    width: 3.1106rem;
+    height: 3.9113rem;
+  }
+
+  .middle-container {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas:
+      ". fillet fillet ."
+      "module module module module"
+      "module module module module"
+      "module module module module"
+      "module module module module"
+      ". . . arrow";
+  }
+
+  .middle-container .fillet-container {
+    grid-area: fillet;
+    display: flex;
+    align-items: center;
+  }
+
+  .middle-container .center-paragraph {
+    grid-area: module;
+    height: auto;
+  }
+
+  .middle-container .arrow {
+    grid-area: arrow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .middle-container .arrow svg {
+    width: 3.1106rem;
+    height: 3.9113rem;
+    transform: translateX(30px);
+  }
+
+  .bottom-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sliding-text {
+    width: 100vw;
+    height: 6.875rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .fillet-bottom {
+    width: 100%;
+    height: 150px;
+    background: #ffec02;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }

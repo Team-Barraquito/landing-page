@@ -34,19 +34,17 @@ class SlidingText extends LitElement {
         color: var(--text-color, #ffec02);
         text-transform: uppercase;
         -webkit-text-stroke: var(--text-stroke, unset);
-        animation: slide 30s linear infinite var(--slide-direction, normal);
+        animation: slide 60s linear infinite var(--slide-direction, normal);
       }
 
       :host .text-container:hover .moving-text,
       :host .text-container:hover .moving-text:nth-child(2) {
-
         animation-play-state: paused;
       }
 
       :host .text-container .moving-text:nth-child(2) {
-        animation:
-        delay-slide 30s linear infinite var(--slide-direction, normal);
-        animation-delay: -15s;
+        animation: delay-slide 60s linear infinite var(--slide-direction, normal);
+        animation-delay: -30s;
       }
 
       @keyframes slide {
@@ -67,7 +65,18 @@ class SlidingText extends LitElement {
         100% {
           transform: translateX(-200%);
         }
-      }`;
+      }
+
+      @media screen and (max-width: 375px) {
+        :host {
+          font-family: 'Monument Extended';
+          font-size: 1.75rem;
+          width: 100%;
+          overflow: hidden;
+          color: var(--text-color, #ffec02);
+        }
+      }
+`;
   }
 
   render () {
@@ -79,7 +88,7 @@ class SlidingText extends LitElement {
           --text-stroke: ${unsafeCSS(this.stroke)};
         }
       </style>
-      
+
       <div class="text-container">
         <p class="moving-text">
           ${(this.text + " " + this.slash + " ").repeat(12)}
