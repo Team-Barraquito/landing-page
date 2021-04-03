@@ -151,20 +151,15 @@ body {
   .top-container section {
     margin: auto;
     width: 100%;
-    height: auto;
+    height: 100%;
     background-color: black;
     display: grid;
     grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: repeat(10, 1fr);
+    grid-template-rows: repeat(5, 1fr);
     grid-template-areas:
       "month month month month month month month .  logo logo "
       "month month month month month month month .  logo logo "
-      "month month month month month month month .  logo logo "
-      "month month month month month month month .  logo logo "
-      "month month month month month month month .  logo logo "
       ". rp rp rp rp rp rp rp rp ."
-      ". rp rp rp rp rp rp rp rp ."
-      ". lp lp lp lp lp lp lp lp ."
       ". lp lp lp lp lp lp lp lp arrow"
       ". . . . . . . . . arrow";
   }
@@ -339,7 +334,6 @@ body {
 
   .middle-container .center-paragraph {
     grid-area: module;
-    height: auto;
   }
 
   .middle-container .arrow {

@@ -21,8 +21,8 @@ class MyElement extends LitElement {
 
     @media screen and (max-width: 768px) {
       .this-month-png {
-        width: 100%;
-        height: 100%;
+        width: 793px;
+        height: 438px;
         background-image: url("../assets/images/this-month-mobile.png");
         background-repeat: no-repeat;
         background-size: 100%;
@@ -34,21 +34,9 @@ class MyElement extends LitElement {
         display: flex;
         align-items: flex-start;
         justify-content: flex-start;
+        overflow: hidden;
       }
     }
-
-    /*
-    .this-month-module {
-      width: 100%;
-      height: 100%;
-      display: flex;
-    }
-
-    .this-month-fill {
-      font-size: 5.375rem;
-    }
-    .this-month-line {}
-    .date {} */
 `;
   }
 
