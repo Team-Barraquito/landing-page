@@ -10,7 +10,6 @@ class BottomSuscribe extends LitElement {
     }
 
     .container {
-      border: 1px solid red;
       width: 100%;
       height: 100%;
       display: flex;
@@ -56,9 +55,7 @@ class BottomSuscribe extends LitElement {
         position: absolute;
         z-index: 1;
       }
-    }
-
-`;
+    }`;
   }
 
   render () {
