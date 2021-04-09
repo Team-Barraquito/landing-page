@@ -16,7 +16,7 @@ class ThisMonth extends LitElement {
       height: 100%;
       background-image: url("/images/this-month-desktop.png");
       background-repeat: no-repeat;
-      background-size: 100%;
+      background-size: contain;
     }
 
     @media screen and (max-width: 768px) {
@@ -25,7 +25,7 @@ class ThisMonth extends LitElement {
         height: 438px;
         background-image: url("/images/this-month-mobile.png");
         background-repeat: no-repeat;
-        background-size: 100%;
+        background-size: contain;
       }
 
       .this-month-container {
