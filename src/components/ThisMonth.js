@@ -1,6 +1,6 @@
 import { LitElement, html, css } from "lit-element";
 
-class MyElement extends LitElement {
+class ThisMonth extends LitElement {
   static get styles () {
     return css`
     .this-month-container {
@@ -14,18 +14,18 @@ class MyElement extends LitElement {
     .this-month-png {
       width: 1000px;
       height: 100%;
-      background-image: url("../assets/images/this-month-desktop.png");
+      background-image: url("/images/this-month-desktop.png");
       background-repeat: no-repeat;
-      background-size: 100%;
+      background-size: contain;
     }
 
     @media screen and (max-width: 768px) {
       .this-month-png {
         width: 793px;
         height: 438px;
-        background-image: url("../assets/images/this-month-mobile.png");
+        background-image: url("/images/this-month-mobile.png");
         background-repeat: no-repeat;
-        background-size: 100%;
+        background-size: contain;
       }
 
       .this-month-container {
@@ -48,4 +48,4 @@ class MyElement extends LitElement {
       `;
   }
 }
-customElements.define("this-month", MyElement);
+customElements.define("this-month", ThisMonth);

@@ -3,9 +3,9 @@
   font-weight: normal;
   font-style: normal;
   src:
-    url(../assets/fonts/MonumentExtended-Regular.woff2),
-    url(../assets/fonts/MonumentExtended-Regular.woff),
-    url(../assets/fonts/MonumentExtended-Regular.otf);
+    url(./assets/fonts/MonumentExtended-Regular.woff2) format("woff2"),
+    url(./assets/fonts/MonumentExtended-Regular.woff) format("woff"),
+    url(./assets/fonts/MonumentExtended-Regular.otf) format("opentype");
 }
 
 body {
