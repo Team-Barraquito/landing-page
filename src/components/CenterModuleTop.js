@@ -108,8 +108,8 @@ class CenterModuleTop extends LitElement {
   render () {
     return html`
       <div class="global-container">
-        <div class ="first-content">
-          <div class ="text-container">
+        <div class="first-content">
+          <div class="text-container">
             <h3> Études de nu </h3>
             <p> Krull edita en 1930 el portafolio Étude de nu,
                 con 24 fotograbados de desnudos, en cuyo texto
@@ -118,7 +118,7 @@ class CenterModuleTop extends LitElement {
             </p>
           </div>
           <div class="image-container">
-            <img src ="/images/Etude.jpg" alt="Exposición Ètude"/>
+            <img loading="lazy" src="/images/Etude.jpg" alt="Exposición Ètude"/>
           </div>
         </div>
       </div>`;

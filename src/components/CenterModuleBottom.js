@@ -94,7 +94,7 @@ class CenterModuleBottom extends LitElement {
       <div class="global-container">
         <div class ="second-content">
           <div class="image-container">
-            <img src ="/images/Kincaid.jpg" alt="Exposición Kincaid"/>
+            <img loading="lazy" src="/images/Kincaid.jpg" alt="Exposición Kincaid"/>
           </div>
           <div class ="second-text-container">
             <h3> Basil Kincaid </h3>
