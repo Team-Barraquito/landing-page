@@ -52,7 +52,6 @@ class BottomSuscribe extends LitElement {
         width: 90%;
         height: 10%;
         background-color: #fff;
-        position: absolute;
         z-index: 1;
       }
     }`;
