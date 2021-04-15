@@ -91,10 +91,10 @@ class SlidingText extends LitElement {
 
       <div class="text-container">
         <p class="moving-text">
-          ${(this.text + " " + this.slash + " ").repeat(12)}
+          ${(this.text + " " + this.slash + " ").repeat(20)}
         </p>
         <p class="moving-text">
-          ${(this.text + " " + this.slash + " ").repeat(12)}
+          ${(this.text + " " + this.slash + " ").repeat(20)}
         </p>
       </div>`;
   }
