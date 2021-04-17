@@ -8,6 +8,16 @@
     url(./assets/fonts/MonumentExtended-Regular.otf) format("opentype");
 }
 
+@font-face {
+  font-family: "Monument Extended";
+  font-weight: 700;
+  src:
+    url(./assets/fonts/MonumentExtended-Ultrabold.woff2) format("woff2"),
+    url(./assets/fonts/MonumentExtended-Ultrabold.woff) format("woff"),
+    url(./assets/fonts/MonumentExtended-Ultrabold.otf) format("opentype");
+}
+
+
 body {
   margin: 0;
   width: 100vw;
@@ -50,6 +60,10 @@ body {
   align-items: center;
   justify-content: center;
   grid-area: logo;
+}
+
+.logo:hover img {
+  filter: drop-shadow( 0 0 10px #8f8f8f);
 }
 
 .top-container section .logo img {
@@ -372,8 +386,4 @@ body {
     align-items: center;
     justify-content: center;
   }
-}
-
-.logo:hover img {
-  filter: drop-shadow( 0 0 10px #8f8f8f);
 }

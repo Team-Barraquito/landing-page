@@ -1,0 +1,5 @@
+# Por defecto tiene estas reglas
+User-agent: *
+Allow: /
+
+sitemap: https://harhuy.com/Sitemap.xml
