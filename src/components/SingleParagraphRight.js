@@ -50,7 +50,6 @@ class SingleParagraphRight extends LitElement {
 `;
   }
 
-  // TODO cambiar texto aqui
   render () {
     return html`
       <style>
@@ -62,9 +61,9 @@ class SingleParagraphRight extends LitElement {
       <div class="single-paragraph">
         <h2 class="title">Festival Boreal</h2>
         <p class="text">
-          Del 19 al 22 de Septiembre de 2019 |
+          Del 25 al 29 de Mayo de 2021 | <br>
           el casco histórico tinerfeño
-          de los Silos albergó el Festival Internacional Boreal.
+          de los Silos albergará el Festival Internacional Boreal.
         </p>
       </div>`;
   }
