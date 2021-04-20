@@ -61,7 +61,7 @@ class SingleParagraphLeft extends LitElement {
       <div class="single-paragraph">
         <h2 class="title">Pablo López</h2>
         <p class="text">
-          In concert | Pabellón de Deportes de Tenerife Santiago Martín | vie 17 mayo | 20:00 |
+          In concert | Pabellón de Deportes de Tenerife Santiago Martín | vie 14 mayo | 20:00 |
         </p>
       </div>`;
   }
