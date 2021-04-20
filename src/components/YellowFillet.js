@@ -61,7 +61,7 @@ class YellowFillet extends LitElement {
     return html`
       <div class = "container">
         <div class= "fillet"> </div>
-        <a href="#"> Suscríbete </a>
+        <a href="https://harhuymag.com/suscripcion"> Suscríbete </a>
       </div>`;
   }
 }
