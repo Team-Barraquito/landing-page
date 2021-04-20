@@ -88,7 +88,6 @@ class CenterModuleBottom extends LitElement {
       }`;
   }
 
-  // TODO cambiar clases de aqui
   render () {
     return html`
       <div class="global-container">
